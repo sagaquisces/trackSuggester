@@ -13,25 +13,36 @@
         <h1>Epicodus Track Suggester</h1>
         <p class="lead">Complete the quiz below to find out what track is best for you!</p>
       </div>
-      <div class="list-group">
-        <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">Ruby/Rails</h4>
-        </a>
-        <a href="#" class="list-group-item active">
-          <h4 class="list-group-item-heading">PHP/Drupal</h4>
-        </a>
-        <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">Java/Android</h4>
-        </a>
-        <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">CSS/Design</h4>
-        </a>
-        <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading">C#/.NET</h4>
-        </a>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3>We currently offer five tracks to choose from:</h2>
+        </div>
+        <div id="classOfferings" class="list-group panel-body">
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Ruby/Rails</h4>
+            <p>A cross-platform Web application framework written in Ruby. The framework was originally authored by David Heinemeier Hansson and researched and further developed by a rail core team of several individual contributors. <small class="text-muted">Definition courtesy of Techopedia</small></p>
+          </a>
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">PHP/Drupal</h4>
+            <p>Drupal, a free and open source content-management framework written in PHP (a script language and interpreter) and distributed under the GNU General Public License, provides a back-end framework for at least 2.2% of all Web sites worldwide – ranging from personal blogs to corporate, political, and government sites.</small></p>
+          </a>
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Java/Android</h4>
+            <p>A cross-platform Web application framework written in Ruby. The framework was originally authored by David Heinemeier Hansson and researched and further developed by a rail core team of several individual contributors. <small class="text-muted">Definition courtesy of Techopedia</small></p>
 
+          </a>
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">CSS/Design</h4>
+            <p>A cross-platform Web application framework written in Ruby. The framework was originally authored by David Heinemeier Hansson and researched and further developed by a rail core team of several individual contributors. <small class="text-muted">Definition courtesy of Techopedia</small></p>
+          </a>
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">C#/.NET</h4>
+            <p>A cross-platform Web application framework written in Ruby. The framework was originally authored by David Heinemeier Hansson and researched and further developed by a rail core team of several individual contributors. <small class="text-muted">Definition courtesy of Techopedia</small></p>
+
+          </a>
+        </div>
       </div>
-      <p>Take this short quiz to determine which track is right for you!</p>
+      <p class="lead">Take this short quiz to determine which track is right for you!</p>
       <form id="trackSuggesterForm">
         <p class="text-primary">1. If you had to choose between developing a user interface (front end) or focusing on the internal logic of web project (back-end) which would it be?</p>
         <div class="radio">
@@ -79,7 +90,9 @@
 
         <p>Ruby/Rails: <span class="scoreRuby"></span>, PHP/Drupal: <span class="scorePHP"></span>, Java/Android: <span class="scoreJava text"></span>, CSS/Design: <span class="scoreCSS"></span>, C#/.NET <span class="scoreCSharp"></span>.</p>
 
-        <p>The winner is <span class="track text-success"></span></p>
+        <div class="alert alert-success">
+          The winner is <strong class="track"></strong>!
+        </div>
       </div>
     </div>
   </body>
