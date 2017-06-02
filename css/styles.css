@@ -5,3 +5,7 @@
 .jumbotron {
   background-color: lightblue;
 }
+
+#footer {
+  display: none;
+}

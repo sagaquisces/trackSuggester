@@ -84,5 +84,9 @@ $(document).ready(function() {
     $(".scoreCSS").text(totalCSS);
     $(".scoreCSharp").text(totalCSharp);
     $(".track").text(getTrack(totalRuby,totalPHP,totalJava,totalCSS,totalCSharp));
+
+    $("#footer").show();
+
+
   });
 });

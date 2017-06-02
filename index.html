@@ -15,7 +15,7 @@
       </div>
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3>We currently offer five tracks to choose from:</h2>
+          <h3>We currently offer five tracks to choose from:</h3>
         </div>
         <div id="classOfferings" class="list-group panel-body">
           <a href="#" class="list-group-item">
@@ -24,7 +24,7 @@
           </a>
           <a href="#" class="list-group-item">
             <h4 class="list-group-item-heading">PHP/Drupal</h4>
-            <p>Drupal, a free and open source content-management framework written in PHP (a script language and interpreter) and distributed under the GNU General Public License, provides a back-end framework for at least 2.2% of all Web sites worldwide – ranging from personal blogs to corporate, political, and government sites.</small></p>
+            <p>Drupal, a free and open source content-management framework written in PHP (a script language and interpreter) and distributed under the GNU General Public License, provides a back-end framework for at least 2.2% of all Web sites worldwide – ranging from personal blogs to corporate, political, and government sites.</p>
           </a>
           <a href="#" class="list-group-item">
             <h4 class="list-group-item-heading">Java/Android</h4>
@@ -42,58 +42,64 @@
           </a>
         </div>
       </div>
-      <p class="lead">Take this short quiz to determine which track is right for you!</p>
-      <form id="trackSuggesterForm">
-        <p class="text-primary">1. If you had to choose between developing a user interface (front end) or focusing on the internal logic of web project (back-end) which would it be?</p>
-        <div class="radio">
-          <label><input type="radio" name="questionOne" value="answerOne">Front-end.</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="questionOne" value="answerTwo">Back-end.</label>
-        </div>
 
-        <p>2. Which of the following best describes how you want to spend a free afternoon (select all that apply):</p>
-        <div class="checkbox">
-          <label><input type="checkbox" name="questionTwo" value="answerOne">Reading a book.</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="questionTwo" value="answerTwo">Looking at your phone.</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="questionTwo" value="answerThree">Engaging in a fun activity.</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="questionTwo" value="answerFour">Having your hair done.</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="questionTwo" value="answerFive">Doing your taxes</label>
-        </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Take this short quiz to determine which track is right for you!</div>
+        <div class="panel-body">
+          <form id="trackSuggesterForm">
+            <p class="text-primary lead">1. If you had to choose between developing a user interface (front end) or focusing on the internal logic of web project (back-end) which would it be?</p>
+            <div class="radio">
+              <label><input type="radio" name="questionOne" value="answerOne">Front-end.</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="questionOne" value="answerTwo">Back-end.</label>
+            </div>
 
-        <p>3. Of the following, which grabs you the most?</p>
-        <div class="radio">
-          <label><input type="radio" name="questionThree" value="answerOne">Content Management</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="questionThree" value="answerTwo">Interactive Web Apps</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="questionThree" value="answerThree">High Performance Apps</label>
-        </div>
+            <p class="text-primary lead">2. Which of the following best describes how you want to spend a free afternoon (select all that apply):</p>
+            <div class="checkbox">
+              <label><input type="checkbox" name="questionTwo" value="answerOne">Reading a book.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="questionTwo" value="answerTwo">Looking at your phone.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="questionTwo" value="answerThree">Engaging in a fun activity.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="questionTwo" value="answerFour">Having your hair done.</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="questionTwo" value="answerFive">Doing your taxes</label>
+            </div>
+
+            <p class="text-primary lead">3. Of the following, which grabs you the most?</p>
+            <div class="radio">
+              <label><input type="radio" name="questionThree" value="answerOne">Content Management</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="questionThree" value="answerTwo">Interactive Web Apps</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="questionThree" value="answerThree">High Performance Apps</label>
+            </div>
 
 
-        <button type="submit" class="btn">Submit</button>
-      </form>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
 
-      <div class="whichTrack">
+        <!--
 
         <h2>Running results:</h2>
 
         <p>Ruby/Rails: <span class="scoreRuby"></span>, PHP/Drupal: <span class="scorePHP"></span>, Java/Android: <span class="scoreJava text"></span>, CSS/Design: <span class="scoreCSS"></span>, C#/.NET <span class="scoreCSharp"></span>.</p>
 
-        <div class="alert alert-success">
-          The winner is <strong class="track"></strong>!
+      -->
+
+        <div id="footer" class="alert alert-success">
+          <p class="lead">The winner is <strong class="track"></strong>!</p>
         </div>
       </div>
-    </div>
   </body>
 </html>
