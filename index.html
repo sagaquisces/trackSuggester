@@ -3,7 +3,7 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Track Suggester</title>
   </head>
@@ -19,18 +19,18 @@
       <li>C#/.NET</li>
     </ol>
     <p>Take this short quiz to determine which track is right for you!</p>
-    <form>
+    <form id="trackSuggesterForm">
       <p>1. If you had to choose between developing a user interface (front end) or focusing on the internal logic of web project (back-end) which would it be?</p>
       <div class="radio">
-        <label><input type="radio" name="questionOne" value="10">Front-end.</label>
+        <label><input type="radio" name="questionOne" value="answerOne">Front-end.</label>
       </div>
       <div class="radio">
-        <label><input type="radio" name="questionTwo" value="1">Back-end.</label>
+        <label><input type="radio" name="questionOne" value="answerTwo">Back-end.</label>
       </div>
 
       <p>Which of the following best describes how you want to spend a free afternoon (select all that apply):
       <div class="checkbox">
-        <label><input type="checkbox" value="">Reading a book.</label>
+        <label><input type="checkbox" value="1">Reading a book.</label>
       </div>
       <div class="checkbox">
         <label><input type="checkbox" value="">Looking at your phone.</label>
@@ -44,7 +44,14 @@
       <div class="checkbox">
         <label><input type="checkbox" value="">Doing your taxes</label>
       </div>
+       <button type="submit" class="btn">Submit</button>
     </form>
+
+    <div class="whichTrack">
+
+      <h2>Running results:</h2>
+
+      <p>Ruby/Rails: <span class="scoreRuby"></span>, PHP/Drupal: <span class="scorePHP"></span>, Java/Android: <span class="scoreJava"></span>, CSS/Design: <span class="scoreCSS"></span>, C#/.NET <span class="scoreCSharp"></span>.</p>
 
   </body>
 </html>
