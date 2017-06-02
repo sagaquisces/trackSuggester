@@ -14,13 +14,32 @@ $(document).ready(function() {
 
     var questionOneAnswer = $("input:radio[name=questionOne]:checked").val();
     if (questionOneAnswer === "answerOne") {
-      var totalCSS =+ 5;
-      alert("here");
+      totalCSS += 5;
     } else if (questionOneAnswer === "answerTwo"){
-      var totalPHP =+1;
-      var totalJava=+1;
-      var totalCSS=+1;
-      var totalCSharp=+1;
+      totalPHP +=1;
+      totalJava+=1;
+      totalCSS+=1;
+      totalCSharp+=1;
+    }
+
+    if ($('input:checkbox[name="questionTwo"][value="answerOne"]').is(':checked')) {
+      totalPHP += 1;
+    }
+
+    if ($('input:checkbox[name="questionTwo"][value="answerTwo"]').is(':checked')) {
+      totalJava += 1;
+    }
+
+    if ($('input:checkbox[name="questionTwo"][value="answerThree"]').is(':checked')) {
+      totalRuby += 1;
+    }
+
+    if ($('input:checkbox[name="questionTwo"][value="answerFour"]').is(':checked')) {
+      totalCSS += 1;
+    }
+
+    if ($('input:checkbox[name="questionTwo"][value="answerFive"]').is(':checked')) {
+      totalCSharp += 1;
     }
 
     // var result = add(number1, number2);
