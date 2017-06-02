@@ -1,3 +1,10 @@
+body {
+  background-image: url("../img/blue-gears_opaque.png");
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
 #classOfferings a:hover {
   background-color: lightblue;
 }
