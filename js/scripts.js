@@ -27,6 +27,8 @@ $(document).ready(function() {
     var totalCSS=0;
     var totalCSharp=0;
 
+    //question 1
+
     var questionOneAnswer = $("input:radio[name=questionOne]:checked").val();
     if (questionOneAnswer === "answerOne") {
       totalCSS += 5;
@@ -36,6 +38,8 @@ $(document).ready(function() {
       totalCSS+=1;
       totalCSharp+=1;
     }
+
+    //question 2
 
     if ($('input:checkbox[name="questionTwo"][value="answerOne"]').is(':checked')) {
       totalPHP += 1;
@@ -57,9 +61,21 @@ $(document).ready(function() {
       totalCSharp += 1;
     }
 
+    // question 3
+
+    var questionThreeAnswer = $("input:radio[name=questionThree]:checked").val();
+    if (questionThreeAnswer === "answerOne") {
+      totalPHP += 1;
+    } else if (questionThreeAnswer === "answerTwo"){
+      totalRuby+=1;
+    } else if (questionThreeAnswer === "answerThree") {
+      totalJava+=1;
+    }
+
+
+
     var whatTrack = getTrack(totalRuby,totalPHP,totalJava,totalCSS,totalCSharp);
 
-    alert(whatTrack);
 
     // var result = add(number1, number2);
     $(".scoreRuby").text(totalRuby);
