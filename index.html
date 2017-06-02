@@ -9,64 +9,65 @@
   </head>
   <body>
     <div class="container">
-    <h1>Epicodus Track Suggester</h1>
-    <p>We currently offer five tracks for you to choose from:
-    <ol>
-      <li>Ruby/Rails</li>
-      <li>PHP/Drupal</li>
-      <li>Java/Android</li>
-      <li>CSS/Design</li>
-      <li>C#/.NET</li>
-    </ol>
-    <p>Take this short quiz to determine which track is right for you!</p>
-    <form id="trackSuggesterForm">
-      <p>1. If you had to choose between developing a user interface (front end) or focusing on the internal logic of web project (back-end) which would it be?</p>
-      <div class="radio">
-        <label><input type="radio" name="questionOne" value="answerOne">Front-end.</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="questionOne" value="answerTwo">Back-end.</label>
-      </div>
+      <h1>Epicodus Track Suggester</h1>
+      <p>We currently offer five tracks for you to choose from:
+      <ol>
+        <li>Ruby/Rails</li>
+        <li>PHP/Drupal</li>
+        <li>Java/Android</li>
+        <li>CSS/Design</li>
+        <li>C#/.NET</li>
+      </ol>
+      <p>Take this short quiz to determine which track is right for you!</p>
+      <form id="trackSuggesterForm">
+        <p>1. If you had to choose between developing a user interface (front end) or focusing on the internal logic of web project (back-end) which would it be?</p>
+        <div class="radio">
+          <label><input type="radio" name="questionOne" value="answerOne">Front-end.</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="questionOne" value="answerTwo">Back-end.</label>
+        </div>
 
-      <p>2. Which of the following best describes how you want to spend a free afternoon (select all that apply):</p>
-      <div class="checkbox">
-        <label><input type="checkbox" name="questionTwo" value="answerOne">Reading a book.</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="questionTwo" value="answerTwo">Looking at your phone.</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="questionTwo" value="answerThree">Engaging in a fun activity.</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="questionTwo" value="answerFour">Having your hair done.</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="questionTwo" value="answerFive">Doing your taxes</label>
-      </div>
+        <p>2. Which of the following best describes how you want to spend a free afternoon (select all that apply):</p>
+        <div class="checkbox">
+          <label><input type="checkbox" name="questionTwo" value="answerOne">Reading a book.</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="questionTwo" value="answerTwo">Looking at your phone.</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="questionTwo" value="answerThree">Engaging in a fun activity.</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="questionTwo" value="answerFour">Having your hair done.</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="questionTwo" value="answerFive">Doing your taxes</label>
+        </div>
 
-      <p>3. Of the following, which grabs you the most?</p>
-      <div class="radio">
-        <label><input type="radio" name="questionThree" value="answerOne">Content Management</label>
+        <p>3. Of the following, which grabs you the most?</p>
+        <div class="radio">
+          <label><input type="radio" name="questionThree" value="answerOne">Content Management</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="questionThree" value="answerTwo">Interactive Web Apps</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="questionThree" value="answerThree">High Performance Apps</label>
+        </div>
+
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <div class="whichTrack">
+
+        <h2>Running results:</h2>
+
+        <p>Ruby/Rails: <span class="scoreRuby"></span>, PHP/Drupal: <span class="scorePHP"></span>, Java/Android: <span class="scoreJava"></span>, CSS/Design: <span class="scoreCSS"></span>, C#/.NET <span class="scoreCSharp"></span>.</p>
+
+        <p>The winner is <span class="track"></span></p>
       </div>
-      <div class="radio">
-        <label><input type="radio" name="questionThree" value="answerTwo">Interactive Web Apps</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="questionThree" value="answerThree">High Performance Apps</label>
-      </div>
-
-
-      <button type="submit" class="btn">Submit</button>
-    </form>
-
-    <div class="whichTrack">
-
-      <h2>Running results:</h2>
-
-      <p>Ruby/Rails: <span class="scoreRuby"></span>, PHP/Drupal: <span class="scorePHP"></span>, Java/Android: <span class="scoreJava"></span>, CSS/Design: <span class="scoreCSS"></span>, C#/.NET <span class="scoreCSharp"></span>.</p>
-
-      <p>The winner is <span class="track"></span></p>
-
+    </div>
   </body>
 </html>
